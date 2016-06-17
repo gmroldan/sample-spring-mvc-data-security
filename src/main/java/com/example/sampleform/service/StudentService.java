@@ -17,6 +17,10 @@ public class StudentService {
 		this.studentDAO.save(student);
 	}
 	
+	public Student findById(final long id) {
+		return this.studentDAO.findOne(id);
+	}
+	
 	public List<Student> findAll() {
 		return (List<Student>) this.studentDAO.findAll();
 	}

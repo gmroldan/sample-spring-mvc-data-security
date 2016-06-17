@@ -17,11 +17,13 @@
 		
 		<table>
 			<tr>
+				<th>Id</th>
 				<th>Name</th>
 				<th>Age</th>
 			</tr>
 			<c:forEach var="student" items="${studentList}">
 				<tr>
+					<td><a href="/student/${student.id}">${student.id}</a></td>
 					<td><c:out value="${student.name}"/></td>
 					<td><c:out value="${student.age}"/></td>
 				</tr>
